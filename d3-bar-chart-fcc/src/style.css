@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.legend {
+  transform: translate(-57px, 50px);
+  font-weight: bold;
+}
+
+#tooltip {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px white;
+  background-color: #5AC4F5;
+  padding: 10px;
+  width: 150px;
+  border-radius: 40px;
+}
+
+.bar:hover {
+  fill: #FCBA35;
+}
+
+.info {
+  text-align: right;
+}
+
+#footer {
+  text-align: right;
+  font-size: 1rem;
+  font-family: 'Covered By Your Grace', cursive;
+  color: black;
+}
+
+@media (max-width: @screen-xs) {
+    svg {
+      width: 705px;
+      font-size: 10px;
+  }
+}
+
+@media (max-width: @screen-sm) {
+    svg {
+      width: 80vw;
+      font-size: 14px;
+  }
+}
